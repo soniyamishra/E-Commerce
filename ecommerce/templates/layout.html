@@ -4,11 +4,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Hare Krishna Enterprises</title>
-
+  
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ url_for('static' , filename='css/materialize.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{ url_for('static' , filename='css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <div class="navbar-fixed">
@@ -44,38 +44,10 @@
       <li><a href="#education">Education</a></li>
   </ul> -->
 
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h3 class="header center dark-text">Welcome to Hare Krishna Enterprises</h3>
-      <div class="row center">
-        <h5 class="header col s12 dark">The ultimate clothing to see the world in.</h5>
-      </div>
-      <br><br>
-
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col s12 m12 l4">
-        <div class="card hoverable">
-          <div class="card-image">
-            <img src="images/product.jpg">
-          </div>
-          
-          <div class="card-content">
-            <span class="card-title">Card Title</span>
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  
+  {% block content %}
+    
+  {% endblock content %}
   <footer class="page-footer black">
     <div class="container">
       <div class="row">
@@ -127,7 +99,7 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+  <script src=" {{ url_for('static' ,  filename='js/materialize.js') }} "></script>
+  <script src=" {{ url_for('static' ,  filename='js/init.js') }} "></script>
   </body>
 </html>

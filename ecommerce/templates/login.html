@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container">
+        <div class="col s12 m6 l6">
+        <h2 class="header">Login</h2>
+            <div class="card horizontal"> 
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col l8 ">
+                                <form class="col s12", method="POST">
+                                    {{ form.hidden_tag() }}
+                                    <div class="row">
+                                        <div class="input-field col s12 m12 l12">
+                                            {% if form.email.errors %}
+                                                {{ form.email(class="validate invalid", type = "email") }}
+                                                    {% for error in form.email.errors %}
+                                                        <span class="helper-text" data-error="{{ error }}" data-success="wrong"></span>  
+                                                    {% endfor %}
+                                            {% else %}
+                                                {{ form.email(class="validate", type = "email") }} 
+                                            {% endif %}
+                                            {{ form.email.label }}
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12 m12 l12">
+                                            {% if form.password.errors %}
+                                                {{ form.password(class="validate invalid") }}
+                                                    {% for error in form.password.errors %}
+                                                        <span class="helper-text" data-error="{{ error }}" data-success="wrong"></span>  
+                                                    {% endfor %}
+                                            {% else %}
+                                                {{ form.password(class="validate") }} 
+                                            {% endif %}
+                                            {{ form.password.label }}
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12 m12 l12">
+                                            {{ form.submit(class="waves-effect waves-light btn ") }}
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                                <div class="col l4 "> 
+                                    <img class="responsive-img hide-on-med-and-down", src="{{ url_for('static',filename='images/user.png') }}" , alt="">
+                                </div>
+                        </div>
+                        
+                    </div>
+                    <div class="card-action ">
+                        Need an account ?
+                        <a href="{{ url_for('register') }}">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
