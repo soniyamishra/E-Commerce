@@ -218,3 +218,17 @@ form.example::after {
   padding-bottom: 1rem;
 
 }
+
+/* Admin Category Page */
+.add-category-header{
+
+  font-size: 2rem;
+  color:black;
+}
+.addcategory-modal-title{
+  color: black;
+}
+
+.form-group{
+  color: black;
+}
