@@ -12,7 +12,7 @@
   <!-- Custom -->
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <title>BT Real Estate</title>
+  <title>Home Page</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
           <i class="fas fa-phone"></i> (617)-555-5555
         </div>
         <div class="col-md-4">
-          <i class="fas fa-envelope-open"></i> contact@btrealestate.co
+          <i class="fas fa-envelope-open"></i> contact@abc.com
         </div>
         <div class="col-md-4">
           <div class="social text-right">
@@ -66,10 +66,25 @@
           <li class="nav-item mr-3">
             <a class="nav-link" href="listings.html">Products</a>
           </li>
-          <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+          <li class="nav-item mr-3">
+            <div class="d-flex">
+              <div class="dropdown mr-1">
+                <a class="btn nav-link dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                  Admin Options
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                  <a class="dropdown-item" href="add_product.html">Add Products</a>
+                  <a class="dropdown-item" href="admin_category.html">Add Category</a>
+                  <a class="dropdown-item" href="view_all_products.html">View All Products</a>
+                </div>
+              </div>
+          </li>
+          <li class="nav-item mr-3">
+          <form class="example search-btn-form" action="">
             <input type="text" placeholder="Search.." name="search2">
             <button type="submit"><i class="fa fa-search"></i></button>
           </form>
+          </li>
         </ul>
 
         <ul class="navbar-nav ml-auto">
@@ -158,10 +173,7 @@
               <hr>
               <div class="row">
                 <div class="col">
-                  <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
-                </div>
-                <div class="col">
-                  <a href="#" class="btn btn-primary btn-block">Buy</a>
+                  <a href="add_product.html" class="btn btn-primary btn-block">Edit</a>
                 </div>
               </div>
             </div>
@@ -186,10 +198,7 @@
               <hr>
               <div class="row">
                 <div class="col">
-                  <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
-                </div>
-                <div class="col">
-                  <a href="#" class="btn btn-primary btn-block">Buy</a>
+                  <a href="#" class="btn btn-primary btn-block">Edit</a>
                 </div>
               </div>
             </div>
@@ -215,10 +224,7 @@
               <hr>
               <div class="row">
                 <div class="col">
-                  <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
-                </div>
-                <div class="col">
-                  <a href="#" class="btn btn-primary btn-block">Buy</a>
+                  <a href="#" class="btn btn-primary btn-block">Edit</a>
                 </div>
               </div>
             </div>
@@ -288,7 +294,7 @@
   <!-- Footer -->
   <footer id="main-footer" class="py-4 bg-primary text-white text-center">
     Copyright &copy;
-    <span class="year"></span> BT Real Estate
+    <span class="year"></span> Soniya Mishra
   </footer>
 
   <script src="assets/js/jquery-3.3.1.min.js "></script>

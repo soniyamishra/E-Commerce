@@ -12,7 +12,7 @@
   <!-- Custom -->
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <title>Login</title>
+  <title>BT Real Estate</title>
 </head>
 
 <body>
@@ -57,7 +57,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav">
-          <li class="nav-item mr-3">
+          <li class="nav-item active mr-3">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item mr-3">
@@ -66,6 +66,10 @@
           <li class="nav-item mr-3">
             <a class="nav-link" href="listings.html">Products</a>
           </li>
+          <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+            <input type="text" placeholder="Search.." name="search2">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
         </ul>
 
         <ul class="navbar-nav ml-auto">
@@ -73,10 +77,9 @@
             <a class="nav-link" href="register.html">
               <i class="fas fa-user-plus"></i> Register</a>
           </li>
-          <li class="nav-item active mr-3">
+          <li class="nav-item mr-3">
             <a class="nav-link" href="login.html">
               <i class="fas fa-sign-in-alt"></i>
-
               Login</a>
           </li>
         </ul>
@@ -84,47 +87,43 @@
     </div>
   </nav>
 
-  <section id="login" class="bg-light py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <div class="card">
-            <div class="card-header bg-primary text-white">
-              <h4>
-                <i class="fas fa-sign-in-alt"></i> Login</h4>
-            </div>
-            <div class="card-body">
-              <form action="index.html">
-                <div class="form-group">
-                  <label for="username">Email</label>
-                  <input type="email" name="email" class="form-control" required>
-                </div>
-
-                <div class="form-group">
-                  <label for="password2">Password</label>
-                  <input type="password" name="password" class="form-control" required>
-                </div>
-                <div class="form-group">
-                  <input type="submit" value="Login" class="btn btn-secondary btn-block">
-                </div>
-                <a href="register.html">Need an account? Register</a>
-              </form>
-            </div>
-          </div>
+  <section id="showcase-addCategory">
+    <div class="text-center"> 
+      <span class="add-category-header"> Search By Category  </span>
+        <div class="d-flex justify-content-center m-2">
+            <form class="example" action="" class="search-btn-form">
+                <input type="text" placeholder="Search.." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer id="main-footer" class="py-4 bg-primary text-white text-center">
-    Copyright &copy;
-    <span class="year"></span> Soniya Mishra
-  </footer>
-
-  <script src="assets/js/jquery-3.3.1.min.js "></script>
-  <script src="assets/js/bootstrap.bundle.min.js "></script>
-  <script src="assets/js/main.js "></script>
-</body>
-
-</html>
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Sr. No</th>
+                <th scope="col">Products</th>
+                <th scope="col">Category</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Silk saree</td>
+                <td>Saree</td>
+                <td>10</td>
+                <td>1500</td>
+                <td> <a href="add_product.html" class="btn btn-primary btn-outline">Edit</a></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Solid Semi stitched lehanga choli</td>
+                <td>lehanga choli</td>
+                <td>15</td>
+                <td>3000</td>
+                <td> <a href="add_product.html" class="btn btn-primary btn-outline">Edit</a></td>
+              </tr>
+            </tbody>
+          </table>
