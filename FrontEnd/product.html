@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/css/all.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <!-- Custom -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Custom styles for this template -->
+  <link href="assets/css/dashboard.css" rel="stylesheet">
+
+  <title>Home Page</title>
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <section id="top-bar" class="p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <i class="fas fa-phone"></i> (617)-555-5555
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-envelope-open"></i> contact@abc.com
+        </div>
+        <div class="col-md-4">
+          <div class="social text-right">
+            <a href="#">
+              <i class="fab fa-whatsapp-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fas fa-envelope-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.png" class="logo" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+          <li class="nav-item active mr-3">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="listings.html">Products</a>
+          </li>
+          <li class="nav-item mr-3">
+            <div class="d-flex">
+              <div class="dropdown mr-1">
+                <a class="btn nav-link dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                  Admin Options
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                  <a class="dropdown-item" href="add_product.html">Add Products</a>
+                  <a class="dropdown-item" href="admin_category.html">Add Category</a>
+                  <a class="dropdown-item" href="view_all_products.html">View All Products</a>
+                </div>
+              </div>
+          </li>
+          <li class="nav-item mr-3">
+          <form class="example search-btn-form" action="">
+            <input type="text" placeholder="Search.." name="search2">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="register.html">
+              <i class="fas fa-user-plus"></i> Register</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="login.html">
+              <i class="fas fa-sign-in-alt"></i>
+
+              Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+<!-- Bootstrap row -->
+<div class="row" id="body-row">
+    <!-- Sidebar -->
+    <div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-2">
+        <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+        <!-- Bootstrap List Group -->
+        <ul class="list-group sticky-top sticky-offset">
+            <!-- Separator with title -->
+            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <small>FILTERS</small>
+            </li>
+            <!-- /END Separator -->
+            <!-- Menu with submenu -->
+            <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                  <span data-feather="home" class="mr-3"></span>
+                    <span class="menu-collapsed">Categories</span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <div id="submenu1" class="collapse sidebar-submenu">
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <!-- <span class="fas fa-chart-line mr-3 fa-lg"></span>
+                    <span class="menu-collapsed">Analytics</span> -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Default checkbox
+                        </label>
+                    </div>
+                </a>
+                <a href="view_all_products.html" class="list-group-item list-group-item-action bg-dark text-white">
+                  <span data-feather="shopping-cart" class="mr-3"></span>
+                    <span class="menu-collapsed">Products</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                  <span data-feather="users" class="mr-3"></span>
+                    <span class="menu-collapsed">Customers</span>
+                </a>
+            </div>
+            <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-user fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Profile</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <div id="submenu2" class="collapse sidebar-submenu">
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="fas fa-user-cog mr-3 fa-lg"></span>
+                    <span class="menu-collapsed">Settings</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="fas fa-lock mr-3 fa-lg"></span>
+                    <span class="menu-collapsed">Password</span>
+                </a>
+            </div>
+
+            <a href="#submenu3" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-start align-items-center">
+                <span class="fa fa-tasks fa-fw mr-3"></span>
+                  <span class="menu-collapsed">Tasks</span>
+                  <span class="submenu-icon ml-auto"></span>
+              </div>
+            </a>
+             <!-- Submenu content -->
+             <div id="submenu3" class="collapse sidebar-submenu">
+              <a href="add_product.html" class="list-group-item list-group-item-action bg-dark text-white">
+                  <span class="fas fa-cart-plus mr-3 fa-lg"></span>
+                  <span class="menu-collapsed">Add Products</span>
+              </a>
+              <a href="add_product.html" class="list-group-item list-group-item-action bg-dark text-white">
+                  <span class="fas fa-edit mr-3 fa-lg"></span>
+                  <span class="menu-collapsed">Edit Products</span>
+              </a>
+              <a href="admin_category.html" class="list-group-item list-group-item-action bg-dark text-white">
+                  <span class="far fa-copyright mr-3 fa-lg"></span>
+                  <span class="menu-collapsed">Manage Category</span>
+              </a>
+          </div>
+            <!-- Separator with title -->
+            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <small>OPTIONS</small>
+            </li>
+            <!-- /END Separator -->
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fas fa-clone mr-3 fa-lg"></span>
+                    <span class="menu-collapsed">Edit Carousel</span>
+                </div>
+            </a>
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fas fa-comment-alt mr-3 fa-lg"></span>
+                    <span class="menu-collapsed">Messages <span class="badge badge-pill badge-primary ml-2">5</span></span>
+                </div>
+            </a>
+            <!-- Separator without title -->
+            <li class="list-group-item sidebar-separator menu-collapsed"></li>
+            <!-- /END Separator -->
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-question fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Help</span>
+                </div>
+            </a>
+            <a href="#" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+                    <span id="collapse-text" class="menu-collapsed">Collapse</span>
+                </div>
+            </a>
+            <!-- Logo -->
+            <li class="list-group-item logo-separator d-flex justify-content-center">
+                <img src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg" width="30" height="30">
+            </li>
+        </ul>
+        <!-- List Group END-->
+    </div>
+    <!-- sidebar-container END -->
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">         
+            <!-- <div class="container">
+                <div class="dropdown mb-4">
+                    <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sort By: Recommended
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">What's New</a>
+                        <a class="dropdown-item" href="#">Price: Low to High</a>
+                        <a class="dropdown-item" href="#">Price: High to Low Price</a>
+                        <a class="dropdown-item" href="#">Relevance</a>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Listings -->
+            <section id="listings" class="mt-1">
+                <div class="container">
+                    <div class="row">
+                    <!-- Listing 1 -->
+                        <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="card listing-preview">
+                                <img class="card-img-top" src="assets/img/homes/home-1.jpg" alt="">
+                                <div class="card-img-overlay">
+                                <h3>
+                                    <span class="badge badge-secondary text-white">$490,000</span>
+                                </h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="listing-heading text-center">
+                                        <h4 class="text-primary">45 Drivewood Circle</h4>
+                                        <p>
+                                        <i class="fas fa-map-marker text-secondary"></i> Norwood MA, 02062</p>
+                                    </div>
+                                    <hr>
+                                <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Listing 2 -->
+                        <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="card listing-preview">
+                                <img class="card-img-top" src="assets/img/homes/home-2.jpg" alt="">
+                                <div class="card-img-overlay">
+                                <h2>
+                                    <span class="badge badge-secondary text-white">$550,000</span>
+                                </h2>
+                                </div>
+                                <div class="card-body">
+                                    <div class="listing-heading text-center">
+                                        <h4 class="text-primary">18 Jefferson Lane</h4>
+                                        <p>
+                                        <i class="fas fa-map-marker text-secondary"></i> Woburn MA, 01801</p>
+                                    </div>
+
+                                    <hr>
+                                    <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Listing 3 -->
+                        <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="card listing-preview">
+                                <img class="card-img-top" src="assets/img/homes/home-3.jpg" alt="">
+                                <div class="card-img-overlay">
+                                <h2>
+                                    <span class="badge badge-secondary text-white">$580,000</span>
+                                </h2>
+                                </div>
+                                <div class="card-body">
+                                <div class="listing-heading text-center">
+                                    <h4 class="text-primary">187 Woodrow Street</h4>
+                                    <p>
+                                    <i class="fas fa-map-marker text-secondary"></i> Salem MA, 01915</p>
+                                </div>
+                                
+                                <hr>
+                                <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Listing 4 -->
+                        <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="card listing-preview">
+                                <img class="card-img-top" src="assets/img/homes/home-4.jpg" alt="">
+                                <div class="card-img-overlay">
+                                <h2>
+                                    <span class="badge badge-secondary text-white">$380,000</span>
+                                </h2>
+                                </div>
+                                <div class="card-body">
+                                <div class="listing-heading text-center">
+                                    <h4 class="text-primary">28 Gifford Street</h4>
+                                    <p>
+                                    <i class="fas fa-map-marker text-secondary"></i> Bedford NH, 03103</p>
+                                </div>
+                                <hr>
+                                <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Listing 5 -->
+                        <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="card listing-preview">
+                                <img class="card-img-top" src="assets/img/homes/home-5.jpg" alt="">
+                                <div class="card-img-overlay">
+                                <h2>
+                                    <span class="badge badge-secondary text-white">$230,000</span>
+                                </h2>
+                                </div>
+                                <div class="card-body">
+                                <div class="listing-heading text-center">
+                                    <h4 class="text-primary">12 United Road</h4>
+                                    <p>
+                                    <i class="fas fa-map-marker text-secondary"></i> South Hampton NH, 03827</p>
+                                </div>
+                                <hr>
+                                <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Listing 6 -->
+                        <div class="col-md-4 col-lg-3 mb-4">
+                            <div class="card listing-preview">
+                                <img class="card-img-top" src="assets/img/homes/home-6.jpg" alt="">
+                                <div class="card-img-overlay">
+                                <h2>
+                                    <span class="badge badge-secondary text-white">$780,000</span>
+                                </h2>
+                                </div>
+                                <div class="card-body">
+                                <div class="listing-heading text-center">
+                                    <h4 class="text-primary">33 Essex Circle</h4>
+                                    <p>
+                                    <i class="fas fa-map-marker text-secondary"></i> Lexington MA, 01731</p>
+                                </div>
+                                <hr>
+                                <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="pagination">
+                                <li class="page-item disabled">
+                                <a class="page-link" href="#">&laquo;</a>
+                                </li>
+                                <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                <a class="page-link" href="#">&raquo;</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+              
+           
+
+
+        </div>
+    </main>
+  </div>
+
+
+
+
+  <script src="assets/js/jquery-3.3.1.min.js "></script>
+  <script src="assets/js/bootstrap.bundle.min.js "></script>
+  <script src="assets/js/main.js "></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <script src="assets/js/dashboard1.js"></script>
+
+</body>
+
+</html>

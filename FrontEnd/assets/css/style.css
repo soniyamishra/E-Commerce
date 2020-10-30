@@ -240,6 +240,11 @@ form.example::after {
 
 }
 
+/* product listing page */
+
+.sortby-dropdown{
+  float: right;
+}
 /* Admin Category Page */
 .add-category-header{
 
