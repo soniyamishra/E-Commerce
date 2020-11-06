@@ -10,3 +10,7 @@ plusMinusButton.addEventListener('click', ()=>{
     plusMinusIcon.setAttribute('class', 'fas fa-plus');
   }
 });
+
+$(function(){
+  $('#demo').multiselect();
+});

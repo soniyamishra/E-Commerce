@@ -130,15 +130,15 @@
             </a>
             <!-- Submenu content -->
             <div id="submenu1" class="collapse sidebar-submenu">
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="#analytics" class="list-group-item list-group-item-action bg-dark text-white">
                     <span class="fas fa-chart-line mr-3 fa-lg"></span>
-                    <span class="menu-collapsed">Analytics</span>
+                    <span class="menu-collapsed"> Analytics</span>
                 </a>
                 <a href="view_all_products.html" class="list-group-item list-group-item-action bg-dark text-white">
                   <span data-feather="shopping-cart" class="mr-3"></span>
                     <span class="menu-collapsed">Products</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                <a href="#customers" class="list-group-item list-group-item-action bg-dark text-white">
                   <span data-feather="users" class="mr-3"></span>
                     <span class="menu-collapsed">Customers</span>
                 </a>
@@ -189,13 +189,13 @@
                 <small>OPTIONS</small>
             </li>
             <!-- /END Separator -->
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <a href="#edit_carousel" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-clone mr-3 fa-lg"></span>
                     <span class="menu-collapsed">Edit Carousel</span>
                 </div>
             </a>
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <a href="#messages" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fas fa-comment-alt mr-3 fa-lg"></span>
                     <span class="menu-collapsed">Messages <span class="badge badge-pill badge-primary ml-2">5</span></span>
@@ -238,10 +238,9 @@
           </button>
         </div>
       </div>
-
+      <a name="analytics">Analytics</a>
       <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
-
-      <h2>Customers</h2>
+      <a name="customers"> <h2>Customers</h2> </a>
       <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
@@ -369,7 +368,7 @@
           </tbody>
         </table>
       </div>
-      <h2>Manage Carousel</h2>
+      <a name="edit_carousel"><h2>Manage Carousel</h2></a>
           <div class="text-center">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
@@ -520,7 +519,7 @@
                 </div>
               </div>
               
-              <h2>Messages</h2>
+            <a name="messages"><h2>Messages</h2></a>
               <div class="col mb-5 table-responsive">
                 <div class="card">
                   <table class="table table-hover">
@@ -565,7 +564,16 @@
 
           </main>
   </div>
-
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+  </div>
 
 
 

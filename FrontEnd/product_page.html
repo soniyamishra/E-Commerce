@@ -21,7 +21,7 @@
     
     .sidenav {
       height: 100%;
-      width: 160px;
+      width: 200px;
       position: fixed;
       z-index: 1;
       top: 100px;
@@ -44,7 +44,7 @@
     }
     
     .main {
-      margin-left: 160px; /* Same as the width of the sidenav */
+      margin-left: 200px; /* Same as the width of the sidenav */
       font-size: 10px; /* Increased text to enable scrolling */
       padding: 0px 10px;
     }
@@ -109,17 +109,7 @@
           </li>
           <li class="nav-item mr-3">
             <a class="nav-link" href="dashboard.html">Dashboard</a>
-            <!-- <div class="d-flex">
-              <div class="dropdown mr-1">
-                <a class="btn nav-link dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                  Admin Options
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                  <a class="dropdown-item" href="add_product.html">Add Products</a>
-                  <a class="dropdown-item" href="admin_category.html">Add Category</a>
-                  <a class="dropdown-item" href="view_all_products.html">View All Products</a>
-                </div>
-              </div> -->
+           
           </li>
           <li class="nav-item mr-3">
           <form class="example search-btn-form" action="">
@@ -176,6 +166,32 @@
     </label>
   </div>
   <hr>
+  <a href="#price">PRICE</a>
+  <div class="form-check ml-3">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+    <label class="form-check-label" for="defaultCheck1">
+      Rs. 199 to Rs. 500
+    </label>
+  </div>
+  <div class="form-check ml-3">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+    <label class="form-check-label" for="defaultCheck1">
+      Rs. 500 to Rs. 1000
+    </label>
+  </div>
+  <div class="form-check ml-3">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+    <label class="form-check-label" for="defaultCheck1">
+      Rs. 1000 to Rs. 2000
+    </label>
+  </div>
+  <div class="form-check ml-3">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+    <label class="form-check-label" for="defaultCheck1">
+      Rs. 2000 to Rs. 3000
+    </label>
+  </div>
+  <hr>
   <a href="#clients">COLOR</a>
   <div class="form-check ml-3">
     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -201,13 +217,25 @@
       Purple
     </label>
   </div>
-  <a href="#contact">Contact</a>
+  <!-- end of filter side nav -->
 </div>
 
+
 <div class="main">
+ 
   <!-- Listings -->
   <section id="listings" class="mt-1">
-    <div class="container">
+    <div class="container mb-4">
+      <div class="dropdown m-4">
+        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sort by:Recommneded
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
       <div class="row">
 
         <!-- Listing 1 -->
