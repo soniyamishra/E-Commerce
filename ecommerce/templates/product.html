@@ -1,0 +1,267 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="row">
+    <div class="col-lg-2">
+        <div class="sidenav">
+            <a href="#">FILTERS</a>
+            <hr>
+            <a href="#">CATEGORY</a>
+            <div class="form-check ml-3">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Saree
+              </label>
+            </div>
+            <div class="form-check ml-3">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Lehanga Choli
+              </label>
+            </div>
+            <div class="form-check ml-3">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Kurta
+              </label>
+            </div>
+            <div class="form-check ml-3">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Blouse
+              </label>
+            </div>
+            <hr>
+            <a href="#price">PRICE</a>
+            <div class="form-check ml-3">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Rs. 199 to Rs. 500
+              </label>
+            </div>
+            <div class="form-check ml-3">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Rs. 500 to Rs. 1000
+              </label>
+            </div>
+            <div class="form-check ml-3">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Rs. 1000 to Rs. 2000
+              </label>
+            </div>
+            <div class="form-check ml-3">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Rs. 2000 to Rs. 3000
+              </label>
+            </div>
+            <hr>
+            <a href="#clients">COLOR</a>
+            <div class="form-check ml-3">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                  Black
+              </label>
+            </div>
+            <div class="form-check ml-3">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Blue
+              </label>
+            </div>
+            <div class="form-check ml-3">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Green
+              </label>
+            </div>
+            <div class="form-check ml-3">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Purple
+              </label>
+            </div>
+            <!-- end of filter side nav -->
+          </div>
+    </div>
+    <div class="col">
+        <div class="main">
+ 
+            <!-- Listings -->
+            <section id="listings" class="mt-1">
+              <div class="container mb-4">
+                <div class="dropdown m-4">
+                  <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sort by:Recommneded
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+                <div class="row">
+          
+                  <!-- Listing 1 -->
+        <div class="col-md-4 col-lg-3 mb-4">
+            <div class="card listing-preview">
+              <img class="card-img-top" src="{{ url_for('static' ,filename='images/Image1-latestlistings.webp' )}}" alt="" height="250px">
+              <div class="card-body">
+                <div class="listing-heading text-center">
+                  <span class="text-primary">Ethnic Kurtas</span> <span> Rs. 490,000 </span>
+                </div>
+                <hr>
+                <p>Women Fit Festive Ethnic Kurta</p>
+                <hr>
+                <div class="row">
+                  <div class="col">
+                    <a href="add_product.html" class="btn btn-primary btn-block">Edit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          
+                <!-- Listing 2 -->
+        <div class="col-md-4 col-lg-3 mb-4">
+            <div class="card listing-preview">
+              <img class="card-img-top" src="{{ url_for('static' ,filename='images/Image2-latestlistings-Sarees.webp' )}}" alt="" height="250px">
+              <div class="card-body">
+                <div class="listing-heading text-center">
+                  <span class="text-primary">Sarees</span> <span> Rs. 490,000 </span>
+                </div>
+                <hr>
+                <p>Temple Border, Dyed Bollywood Tussar Silk Saree  (Green)</p>
+                <hr>
+                <div class="row">
+                  <div class="col">
+                    <a href="#" class="btn btn-primary btn-block">Edit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+                 <!-- Listing 3 -->
+        <div class="col-md-4 col-lg-3 mb-4">
+            <div class="card listing-preview">
+              <img class="card-img-top"  src="{{ url_for('static' ,filename='images/image3-latestlistings.webp' )}}" height="250px" alt="">
+              <div class="card-body">
+                <div class="listing-heading text-center">
+                  <span class="text-primary">Women Short Kurta</span> <span> Rs. 490,000 </span>
+                </div>
+                <hr>
+                <p>Women Printed Pure Cotton Straight Kurta  (Blue)
+                </p>
+                <hr>
+                <div class="row">
+                  <div class="col">
+                    <a href="#" class="btn btn-primary btn-block">Edit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          
+                 <!-- Listing 3 -->
+         <div class="col-md-4 col-lg-3 mb-4">
+            <div class="card listing-preview">
+              <img class="card-img-top" src="{{ url_for('static' ,filename='images/image4-latestlistings.webp' )}}" alt="" height="250px">
+              <div class="card-body">
+                <div class="listing-heading text-center">
+                  <span class="text-primary">Modern Tees</span> <span> Rs. 490,000 </span>
+                </div>
+                <hr>
+                <p>Women Tees (white)
+                </p>
+                <hr>
+                <div class="row">
+                  <div class="col">
+                    <a href="#" class="btn btn-primary btn-block">Edit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <!-- Listing 5 -->
+                  <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card listing-preview">
+                      <img class="card-img-top" src="assets/img/homes/home-5.jpg" alt="">
+                      <div class="card-img-overlay">
+                        <h2>
+                          <span class="badge badge-secondary text-white">$230,000</span>
+                        </h2>
+                      </div>
+                      <div class="card-body">
+                        <div class="listing-heading text-center">
+                          <h4 class="text-primary">12 United Road</h4>
+                          <p>
+                            <i class="fas fa-map-marker text-secondary"></i> South Hampton NH, 03827</p>
+                        </div>
+                        <hr>
+                        <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Listing 6 -->
+                  <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card listing-preview">
+                      <img class="card-img-top" src="assets/img/homes/home-6.jpg" alt="">
+                      <div class="card-img-overlay">
+                        <h2>
+                          <span class="badge badge-secondary text-white">$780,000</span>
+                        </h2>
+                      </div>
+                      <div class="card-body">
+                        <div class="listing-heading text-center">
+                          <h4 class="text-primary">33 Essex Circle</h4>
+                          <p>
+                            <i class="fas fa-map-marker text-secondary"></i> Lexington MA, 01731</p>
+                        </div>
+                        <hr>
+                        <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+                      </div>
+                    </div>
+                  </div>
+          
+                </div>
+          
+                <div class="row">
+                  <div class="col-md-12">
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#">&laquo;</a>
+                      </li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">&raquo;</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+          
+          </div>
+
+    </div>
+</div>
+
+
+
+
+
+{% endblock content %}
