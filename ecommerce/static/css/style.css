@@ -290,7 +290,6 @@ form.example::after {
 .sidenav a {
   padding: 10px 0px 0px 16px;
   text-decoration: none;
-  font-size: 15px;
   color:black;
   display: block;
 }
@@ -301,7 +300,6 @@ form.example::after {
 
 .main {
   margin-left: 200px; /* Same as the width of the sidenav */
-  font-size: 10px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
 
@@ -309,5 +307,3 @@ form.example::after {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
-
