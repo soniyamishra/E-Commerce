@@ -17,6 +17,26 @@ def about():
 def product():
     return render_template('product.html')
 
+@app.route("/dashboard")
+def dashboard():
+    return render_template('dashboard.html')
+
+@app.route("/view_products")
+def view_products():
+    return render_template('view_all_products.html')
+
+@app.route("/add_products")
+def add_products():
+    return render_template('add_product.html')
+
+@app.route("/add_category")
+def add_category():
+    return render_template('admin_category.html')
+
+@app.route("/view_message")
+def view_message():
+    return render_template('view_message.html')
+
 @app.route("/register", methods = ['GET', 'POST'])
 def register():
     form=RegistrationForm()
@@ -34,3 +54,4 @@ def login():
         else:
             flash('Login Unsuccessful. Please check username and password', 'danger')
     return render_template('login.html', title='Login', form=form)
+

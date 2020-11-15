@@ -70,7 +70,7 @@
             <a class="nav-link" href="{{ url_for('product') }} ">Products</a>
           </li>
           <li class="nav-item mr-3">
-            <a class="nav-link" href="dashboard.html">Dashboard</a>
+            <a class="nav-link" href="{{ url_for('dashboard') }} ">Dashboard</a>
             <!-- <div class="d-flex">
               <div class="dropdown mr-1">
                 <a class="btn nav-link dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
@@ -93,11 +93,11 @@
 
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mr-3">
-            <a class="nav-link" href="register.html">
+            <a class="nav-link" href="{{ url_for('register') }} ">
               <i class="fas fa-user-plus"></i> Register</a>
           </li>
           <li class="nav-item mr-3">
-            <a class="nav-link" href="login.html">
+            <a class="nav-link" href="{{ url_for('login') }} ">
               <i class="fas fa-sign-in-alt"></i>
 
               Login</a>
@@ -112,61 +112,7 @@
     
   {% endblock content %}
  
-  <section id="services" class="py-5 bg-secondary text-white">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-4">
-          <i class="fas fa-comment fa-4x mr-4"></i>
-          <hr>
-          <h3>Connect with Us</h3>
-          <p><div class="social">
-            <div class="col">
-              <div class="row icon-footer">
-                <a  class="icon-footer-color" href="#">
-                  <i class="fab fa-whatsapp-square"></i> Whatsapp
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="row icon-footer">
-                <a class="icon-footer-color" href="#">
-                  <i class="fab fa-instagram"></i> Instagram
-                </a>
-              </div>
-            </div>
-            <div class="col">
-              <div class="row icon-footer">
-                <a class="icon-footer-color" href="#">
-                  <i class="fab fa-facebook"></i> Facebook
-                </a>
-              </div>
-            </div>
-            <div class="col ">
-              <div class="row icon-footer">
-                <a class="icon-footer-color" href="#">
-                  <i class="fas fa-envelope-square"></i> Email
-                </a>
-              </div>
-            </div>            
-          </div>
-        </p>
-        </div>
-        <div class="col-md-4">
-          <i class="fas fa-home fa-4x mr-4"></i>
-          <hr>
-          <h3>Shop Address</h3>
-          <p> Sujata Shop No 8,Hare Krishna Enterprise, Ghatkopar West, Mumbai -400070, Maharashtra, India</p>
-        </div>
-        <div class="col-md-4">
-          <i class="fas fa-suitcase fa-4x mr-4"></i>
-          <hr>
-          <h3>Get to Know Us</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, debitis nam! Repudiandae, provident iste consequatur
-            hic dignissimos ratione ea quae.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  
   <!-- Footer -->
   <footer id="main-footer" class="py-4 bg-primary text-white text-center">
     Copyright &copy;

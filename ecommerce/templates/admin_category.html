@@ -1,0 +1,126 @@
+{% extends "layout.html"%}
+{% block content %}
+
+    <!-- ADD CATEGORY SECTION -->
+    <section id="showcase-addCategory">
+      <div class="text-center"> 
+        <span class="add-category-header">Clothes Categories  </span>
+          <div class="d-flex justify-content-center m-2">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="fas fa-plus-circle"></i>Add Category</button>
+          </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title addcategory-modal-title" id="exampleModalLabel">Add Category</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group text-left">
+                    <label for="recipient-name" class="">Category Name:</label>
+                    <input type="text" class="" id="recipient-name">
+                  </div>
+                  <div class="form-group text-left">
+                    <label for="exampleFormControlFile1">Upload File</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="row">
+
+        <div class="col-lg-2 m-3">
+          <div class="card" style="width: 14rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 m-3">
+          <div class="card" style="width: 14rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 m-3">
+          <div class="card" style="width: 14rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 m-3">
+          <div class="card" style="width: 14rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 m-3">
+          <div class="card" style="width: 14rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 m-3">
+          <div class="card" style="width: 14rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 m-3">
+          <div class="card" style="width: 14rem;">
+            <img class="card-img-top" src="assets/img/saarees.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Sarees</h5>
+              <a href="/media/keshav/DATA/Soniya/E-Commerce/FrontEnd/edit_category.html" class="btn btn-primary">Edit</a>
+            </div>
+          </div>
+        </div>
+        
+               
+    </div>
+     
+    </section>
+
+{% endblock content %}
