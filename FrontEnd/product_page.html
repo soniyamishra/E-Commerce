@@ -14,7 +14,61 @@
 
   <title>Home Page</title>
 
+  <style>
+    .sidenav2 {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 20; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden;
+  margin-top: 20%;
+   /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav2 a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav2 a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav2 .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main1 {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav2 {padding-top: 15px;}
+  .sidenav2 a {font-size: 18px;}
+}
+  </style>
+
 </head>
+
 
 <body>
   <!-- Top Bar -->
@@ -94,111 +148,108 @@
       </div>
     </div>
   </nav>
+  <div id="mySidenav" class="sidenav2">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
 
+  <div class="sidenav">
+    <a href="#">FILTERS</a>
+    <hr>
+    <a href="#">CATEGORY</a>
+    <div class="form-check ml-3">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Saree
+      </label>
+    </div>
+    <div class="form-check ml-3">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Lehanga Choli
+      </label>
+    </div>
+    <div class="form-check ml-3">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Kurta
+      </label>
+    </div>
+    <div class="form-check ml-3">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Blouse
+      </label>
+    </div>
+    <hr>
+    <a href="#price">PRICE</a>
+    <div class="form-check ml-3">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Rs. 199 to Rs. 500
+      </label>
+    </div>
+    <div class="form-check ml-3">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Rs. 500 to Rs. 1000
+      </label>
+    </div>
+    <div class="form-check ml-3">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Rs. 1000 to Rs. 2000
+      </label>
+    </div>
+    <div class="form-check ml-3">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Rs. 2000 to Rs. 3000
+      </label>
+    </div>
+    <hr>
+    <a href="#clients">COLOR</a>
+    <div class="form-check ml-3">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+          Black
+      </label>
+    </div>
+    <div class="form-check ml-3">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Blue
+      </label>
+    </div>
+    <div class="form-check ml-3">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Green
+      </label>
+    </div>
+    <div class="form-check ml-3">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Purple
+      </label>
+    </div>
+    <!-- end of filter side nav -->
+  </div>
+  <div id=main1>
+    <button class="openbtn d-block d-sm-none" onclick="openNav()">&#9776; Open Sidebar</button>
 
-<div class="sidenav">
-  <a href="#">FILTERS</a>
-  <hr>
-  <a href="#">CATEGORY</a>
-  <div class="form-check ml-3">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-      Saree
-    </label>
   </div>
-  <div class="form-check ml-3">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-      Lehanga Choli
-    </label>
-  </div>
-  <div class="form-check ml-3">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-      Kurta
-    </label>
-  </div>
-  <div class="form-check ml-3">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-      Blouse
-    </label>
-  </div>
-  <hr>
-  <a href="#price">PRICE</a>
-  <div class="form-check ml-3">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-      Rs. 199 to Rs. 500
-    </label>
-  </div>
-  <div class="form-check ml-3">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-      Rs. 500 to Rs. 1000
-    </label>
-  </div>
-  <div class="form-check ml-3">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-      Rs. 1000 to Rs. 2000
-    </label>
-  </div>
-  <div class="form-check ml-3">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-      Rs. 2000 to Rs. 3000
-    </label>
-  </div>
-  <hr>
-  <a href="#clients">COLOR</a>
-  <div class="form-check ml-3">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-        Black
-    </label>
-  </div>
-  <div class="form-check ml-3">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-      Blue
-    </label>
-  </div>
-  <div class="form-check ml-3">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-      Green
-    </label>
-  </div>
-  <div class="form-check ml-3">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">
-      Purple
-    </label>
-  </div>
-  <!-- end of filter side nav -->
-</div>
-
-
-<div class="main">
  
   <!-- Listings -->
+    <div id="main">
   <section id="listings" class="mt-1">
     <div class="container mb-4">
-      <div class="dropdown m-4">
-        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Sort by:Recommneded
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </div>
       <div class="row">
-
         <!-- Listing 1 -->
-        <div class="col-md-4 col-lg-3 mb-4">
+        <div class="col-md-4 col-lg-3 col-sm-12 mb-4">
           <div class="card listing-preview">
             <img class="card-img-top" src="assets/img/homes/home-1.jpg" alt="">
             <div class="card-img-overlay">
@@ -327,6 +378,8 @@
 
       </div>
 
+      
+
       <div class="row">
         <div class="col-md-12">
           <ul class="pagination">
@@ -351,7 +404,24 @@
     </div>
   </section>
 
-</div>
+  </div>
+
+
+  <script>
+     function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+  </script>
+ <script src="assets/js/jquery-3.3.1.min.js "></script>
+ <script src="assets/js/bootstrap.bundle.min.js "></script>
+ <script src="assets/js/main.js "></script>
+ 
    
 </body>
 </html> 
